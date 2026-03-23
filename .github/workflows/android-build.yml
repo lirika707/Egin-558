@@ -25,6 +25,7 @@ jobs:
         run: |
           rm -rf node_modules package-lock.json
           npm install --include=optional
+          npm install -D @tailwindcss/oxide-linux-x64-gnu@^4.1.14
           npm rebuild
 
       - name: Build web app
